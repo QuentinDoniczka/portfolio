@@ -1,0 +1,227 @@
+/* Général */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #2d3436;
+  font-size: 16px;
+}
+a {
+  color: #2d3436;
+  text-decoration: none;
+}
+a:hover {
+  color: #2d3436;
+  text-decoration: none;
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+@media(max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media(max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media(max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media(max-width: 776px) {
+  .container {
+    max-width: 100%;
+  }
+}
+main {
+  min-height: calc(100vh - 80px);
+  background-color: #dfe6e9;
+}
+/* header */
+header {
+  height: 50px;
+  background-color: #74b9ff;
+}
+h1 {
+  margin: 0px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.github_link {
+  position: relative;
+  margin: 0px;
+}
+.github_link::before {
+  content: "";
+  background-image: url(./assets/github.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Présentation */
+.presentation {
+  max-width: 600px;
+  text-align: center;
+  margin: 50px 0px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Footer */
+footer {
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+footer p {
+  margin: 0px;
+}
+.projets {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.bloc_projet {
+  width : calc(33% - 30px);
+  margin: 0 15px;
+}
+.bloc_projet_vign {
+  height: 205px;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+.filtre .bloc_projet_vign {
+  background-image: url('./assets/mips.png');
+}
+.jeuvie .bloc_projet_vign {
+  background-image: url('./assets/ubuntu.png');
+  background-size: cover;
+}
+/* .see_code {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+} */
+.bloc_projet h2 {
+  margin: 0px;
+}
+.bloc_projet .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  background: #0984e3;
+  z-index: 2;
+  position: relative;
+  top: 70px;
+}
+.bloc_projet .langages {
+  display: none;
+  margin: 0;
+  list-style-type: none;
+  padding: 0px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background: #74b9ff;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.langages li {
+  height: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.bloc_projet_vign:hover .langages {
+  display: flex;
+}
+.projets .txt b{
+  color: #0984e3;
+}
+.btn_link {
+  background: #74b9ff;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.btn_link.btn-code {
+  background: #00cec9;
+}
+.btn_link:hover {
+  background: #0984e3;
+}
+.btn_link.btn-code:hover {
+  background: #00b894;
+}
+.btns {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width: 992px) {
+  .bloc_projet {
+    width: calc(50% - 30px);
+  }
+}
+
+@media(max-width: 618px) {
+  .bloc_projet {
+    width: 100%;
+  }
+}
