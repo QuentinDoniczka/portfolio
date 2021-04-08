@@ -138,6 +138,11 @@ footer p {
   background-image: url('./assets/ubuntu.png');
   background-size: cover;
 }
+.demineur .bloc_projet_vign {
+  background-image: url('./assets/demineur.png');
+  background-size: cover;
+  background-position: center;
+}
 /* .see_code {
   position: absolute;
   bottom: 0px;
